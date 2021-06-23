@@ -39,7 +39,8 @@ header label:hover{
     background: red;
 }
 .menu{
-    width: 1182px;
+    width: 80%;
+    position: fixed;
 }
 .menu ul{
     margin: 0;
