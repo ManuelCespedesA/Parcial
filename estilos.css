@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    font-family: Arial;
+}
+#container{
+    width: 80%;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+header{
+    width: 1182px;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 1000;
+}
+header img{
+    max-width: 40px;
+    max-height: 40px;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+header label:hover{
+    cursor: pointer;
+    background: red;
+}
+.menu{
+    width: 1182px;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li{
+    flex-grow: 1;
+    text-align: center;
+    border-right: 1px solid white;
+}
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        cursor: absolute;
+        background: #645656;
+        opacity: 1;
+        width: 200px;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid white;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 40px);
+    margin-top: 4%;
+}
+.RESUMEN{
+    margin-top: 1%;
+    width: auto;
+    padding: 5%;
+}
+.RESUMEN div{
+    width: auto;
+    margin: 3%;
+    padding: 2%;
+    margin-bottom: 0%;
+    position: relative;
+    padding-bottom: 35%;
+}
+.RESUMEN #imagen{
+    margin: 1%;
+    float: right;
+    padding-bottom: 4%;
+    width: 30%;
+    height: 50%;
+}
+.RESUMEN #text{
+    top: 10%;
+    width: 60%;
+    margin: 3%;
+    padding-bottom: calc(5% - 100px);
+    padding-top: calc(5%-100px);
+    position: absolute;
+    text-align: justify;
+    font-size: 22px;
+}
+.RESUMEN #text2{
+    top: 60%;
+    width: 90%;
+    padding-bottom: calc(5% - 100px);
+    padding-top: calc(5%-100px);
+    margin-bottom: 80%;
+    position: absolute;
+    text-align: justify;
+    font-size: 22px;
+}
+.INICIO{
+    margin-top: 1%;
+    width: auto;
+    padding: 5%;
+}
+#content{
+    width: 100%;
+    float: auto;
+    padding: 20px;
+    font-size: 17px;
+}
+#content h2{
+    margin-top: 1%;
+    width: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 3%;
+}
+#content div{
+    width: auto;
+    margin: 3%;
+    padding: 2%;
+    margin-bottom: 5%;
+    position: relative;
+    padding-bottom: 18%;
+    background-color: white;
+}
+details{
+    width: 95%;
+    height: auto;
+}
+#content #imagen{
+    margin: 1%;
+    float: right;
+    padding-bottom: 4%;
+}
+#content #textdd{
+    top: 32%;
+    width: 65%;
+    margin: 0%;
+    padding-bottom: calc(5% - 100px);
+    padding-top: calc(5%-100px);
+    position: absolute;
+    text-align: justify;
+}
+img{
+    height: 80%;
+    width: 95%;
+    max-width: 280px;
+    max-height: 220px;
+    left: 95%;
+    float: right;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-top: 9%;
+}
+
+summary{
+    width: 100%;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2%;
+    margin: 2%;
+    outline: none;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+dd{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blue;
+}
+
+details[open] summary{
+    background-color: #807e7e;
+}
+.titvideo{
+    margin-top: 1%;
+    width: auto;
+    padding: 5%;
+}
+.titvideo #text{
+    padding-top: 1%;
+    font-size: 22px;
+}
+#video{
+    position: relative;
+    overflow: hidden;
+    padding-top: 45%;
+    width: 80%;
+    margin-left: 10%;
+}
+#video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.TABLA{
+	background: lightblue;
+    padding-bottom: 2%;
+}
+.TABLA h1{
+    margin-top: 1%;
+    width: auto;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+table h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+table{
+    margin-top: 30px;
+    caption-side: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-image: linear-gradient(to left, rgb(64, 148, 106),white);
+    box-shadow: 5px 5px 5px gray;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+caption{
+    padding-top: 20px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+td,th{
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+form{
+    margin-top: 0%;
+    width: 100%;
+    padding: 5%;
+}
+form ul li{
+    list-style: none;
+    margin-top: 1.5%;
+    margin-left: 2%;
+}
+#tap1 div{
+    width: 80%;
+    display: inline-flex;
+    margin-right: 4%;
+    justify-content: flex-start;
+}
+input{
+    background: none;
+    color: #645656;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+label{
+    font-size: 20px;
+    font-style: italic;
+}
+select{
+    cursor: pointer;
+    padding: 0.5%;
+    margin-left: 2%;
+}
+
+button{
+    font-family: 'roboto';
+    background: #4568DC;
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    border: none;
+    width: 20%;
+    color: #fff;
+    height: 40ps;
+    font-size: 25px;
+    cursor: pointer;
+	margin-left: 1.5%;
+}
+#SO{
+    margin-top: 1.5%;
+    margin-bottom: 0.5%;
+}
+#botones{
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
