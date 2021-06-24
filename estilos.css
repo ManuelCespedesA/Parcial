@@ -65,7 +65,7 @@ header label:hover{
 .banner{
     position: relative;
     width: 100%;
-    height: calc(100vh - 40px);
+    height: calc(30vh - 40px);
     margin-top: 4%;
     background-color: #f5f5f5;
     background-size: cover;
