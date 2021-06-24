@@ -16,7 +16,6 @@ body{
 }
 header{
     width: 1182px;
-    display: flex;
     justify-content: flex-start;
     position: fixed;
     z-index: 1000;
@@ -31,8 +30,8 @@ header img{
 }
 header label{
     display: none;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     padding: 5px;
     border-right: 1px solid #fff;
 }
@@ -54,13 +53,14 @@ header label:hover{
     flex-grow: 1;
     text-align: center;
     border-right: 1px solid white;
+    font-size: 22px;
 }
 .menu li:hover{
     background: rgba(47, 0, 255, 0.521);
 }
 .menu li a{
     display: block;
-    padding: 15px 10px;
+    padding: 20px 15px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -245,54 +245,7 @@ dd{
 details[open] summary{
     background-color: #ca813c;
 }
-@media (max-width: 1260px){
-    .INICIO p{
-        font-size: 21px;
-    }
-    #content #imagen{
-        margin-top: -25px;
-    }
-    summary{
-        font-size: 25px;
-    }
-    dd{
-        font-size: 20px;
-        margin-left: -1.5%;
-        margin-right: -10%;
-    }
-}
-@media (max-width: 1201px){
 
-    .INICIO p{
-        font-size: 20px;
-    }
-
-    summary{
-        font-size: 20px;
-    }
-    dd{
-        font-size: 18px;
-        margin-left: -1.5%;
-        margin-right: -10%;
-    }
-}
-
-@media (max-width: 1008px){
-    .INICIO p{
-        font-size: 18px;
-    }
-    #content #imagen{
-        width: 35%;
-    }
-    summary{
-        font-size: 15px;
-    }
-    dd{
-        font-size: 12px;
-        margin-left: -1.5%;
-        margin-right: -10%;
-    }
-}
 .titvideo{
     margin-top: 1%;
     width: auto;
@@ -434,7 +387,37 @@ footer p{
     margin-right: 5px;
     margin-left: 5px;
 }
+@media (max-width: 1260px){
+    .INICIO p{
+        font-size: 21px;
+    }
+    #content #imagen{
+        margin-top: -25px;
+    }
+    summary{
+        font-size: 25px;
+    }
+    dd{
+        font-size: 20px;
+        margin-left: -1.5%;
+        margin-right: -10%;
+    }
+}
+@media (max-width: 1201px){
 
+    .INICIO p{
+        font-size: 20px;
+    }
+
+    summary{
+        font-size: 20px;
+    }
+    dd{
+        font-size: 18px;
+        margin-left: -1.5%;
+        margin-right: -10%;
+    }
+}
 @media (max-width: 1175px){
     .RESUMEN h1{
         font-size: 25px;
@@ -451,10 +434,13 @@ footer p{
         font-size: 20px;
     }
     .INICIO h1{
-
+        font-size: 25px;
     }
     .INICIO p{
-        font-size: 2px;
+        font-size: 18px;
+    }
+    #content h2{
+        font-size: 22px;
     }
     .titvideo h1{
         font-size: 25px;
@@ -471,6 +457,9 @@ footer p{
     caption{
         font-size: 25px;
     }
+    .FORMULARIO h2{
+        font-size: 25px;
+    }
     input{
         font-style: 14px;
     }
@@ -479,6 +468,20 @@ footer p{
     }
     button{
         font-size: 20px;
+    }
+}
+@media (max-width: 1008px){
+
+    #content #imagen{
+        width: 35%;
+    }
+    summary{
+        font-size: 15px;
+    }
+    dd{
+        font-size: 12px;
+        margin-left: -1.5%;
+        margin-right: -10%;
     }
 }
 @media (max-width: 1000px){
@@ -500,6 +503,9 @@ footer p{
     .menu li{
         border-top: 1px solid white;
     }
+    .menu li a{
+        padding: 40px 40px;
+    }
     .menu nav{
         padding-top: 200px;
         margin-top: 50px;
@@ -517,22 +523,37 @@ footer p{
     }
     .RESUMEN #text{
         width: 60%;
-        font-size: 17px;
-    }
-    .INICIO h1{
-        font-size: 28px;
-    }
-    .INICIO p{
         font-size: 20px;
     }
     .RESUMEN #text2{
-        font-size: 17px;
+        font-size: 20px;
+    }
+    .INICIO h1{
+        font-size: 23px;
+    }
+    .INICIO p{
+        font-size: 10px;
+    }
+    #content h2{
+        font-size: 20px;
+    }
+    #content #imagen{
+        width: 30%;
+        margin-top: 10px;
+    }
+    summary{
+        font-size: 20px;
+    }
+    dd{
+        font-size: 15px;
+        margin-left: -1.5%;
+        margin-right: -10%;
     }
     .titvideo h1{
         font-size: 23px;
     }
     .titvideo #text{
-        font-size: 17px;
+        font-size: 10px;
     }
     .TABLA h1{
         font-size: 23px;
@@ -546,6 +567,15 @@ footer p{
     }
     caption{
         font-size: 22px;
+    }
+    .FORMULARIO{
+        width: 100%;
+    }
+    .FORMULARIO h2{
+        font-size: 23px;
+    }
+    .FORMULARIO #tap1{
+        font-size: 90%;
     }
     input{
         font-style: 12px;
@@ -565,23 +595,6 @@ footer p{
         padding-top: 8.5rem;
         font-size: 3.25rem;
     }
-    footer p{
-        height: 20px;
-        font-size: 15px;
-        margin-left: 5px;
-        margin-right: 2px;
-    }
-    #foot a{
-        height: 20px;
-        font-size: 90%;
-        flex-direction: column;
-        margin-right: 3px;
-        margin-left: 3px;
-    }
-    footer{
-        height: 30px;
-        line-height: 30px;
-    }
     .RESUMEN h1{
         font-size: 18px;
     }
@@ -599,10 +612,13 @@ footer p{
         font-size: 13px;
     }
     .INICIO h1{
-        font-size: 26px;
+        font-size: 18px;
     }
     .INICIO p{
-        font-size: 18px;
+        font-size: 10px;
+    }
+    #content h2{
+        font-size: 15px;
     }
     .titvideo h1{
         font-size: 18px;
@@ -619,6 +635,9 @@ footer p{
     caption{
         font-size: 20px;
     }
+    .FORMULARIO h2{
+        font-size: 18px;
+    }
     input{
         font-style: 11px;
     }
@@ -628,13 +647,42 @@ footer p{
     button{
         font-size: 15px;
     }
+    footer p{
+        height: 20px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+    #foot a{
+        height: 20px;
+        font-size: 90%;
+        flex-direction: column;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    footer{
+        height: 30px;
+        line-height: 30px;
+    }
 }
 @media (max-width: 650px){
+    .INICIO h1{
+        font-size: 15px;
+    }
+    .INICIO p{
+        font-size: 13px;
+    }
+    #content h2{
+        font-size: 14px;
+    }
     td,th{
         font-size: 10px;
     }
     caption{
         font-size: 18px;
+    }
+    .FORMULARIO h2{
+        font-size: 15px;
     }
     input{
         font-style: 10px;
@@ -664,10 +712,13 @@ footer p{
         font-size: 10px;
     }
     .INICIO h1{
-        font-size: 24px;
+        font-size: 13px;
     }
     .INICIO p{
-        font-size: 16px;
+        font-size: 10px;
+    }
+    #content h2{
+        font-size: 12px;
     }
     .titvideo h1{
         font-size: 13px;
@@ -688,8 +739,8 @@ footer p{
     caption{
         font-size: 15px;
     }
-    .FORMULARIO{
-        width: 100%;
+    .FORMULARIO h2{
+        font-size: 13px;
     }
     input{
         font-style: 9px;
@@ -703,7 +754,7 @@ footer p{
 }
 @media (max-width:470px){
     .RESUMEN h1{
-        font-size: 8px;
+        font-size: 10px;
     }
     .RESUMEN #imagen{
         width: 20%;
@@ -719,19 +770,22 @@ footer p{
         font-size: 6px;
     }
     .INICIO h1{
-        font-size: 22px;
+        font-size: 10px;
     }
     .INICIO p{
-        font-size: 14px;
+        font-size: 8px;
+    }
+    #content h2{
+        font-size: 10px;
     }
     .titvideo h1{
-        font-size: 8px;
+        font-size: 10px;
     }
     .titvideo #text{
-        font-size: 6px;
+        font-size: 8px;
     }
     .TABLA h1{
-        font-size: 8px;
+        font-size:10px;
     }
     td,th{
         font-size: 7px;
@@ -742,6 +796,9 @@ footer p{
     }
     caption{
         font-size: 12px;
+    }
+    .FORMULARIO h2{
+        font-size: 10px;
     }
     input{
         font-style: 7px;
@@ -787,6 +844,15 @@ footer p{
     .RESUMEN #text2{
         font-size: 6px;
     }
+    .INICIO h1{
+        font-size: 8px;
+    }
+    .INICIO p{
+        font-size: 6px;
+    }
+    #content h2{
+        font-size: 8px;
+    }
     .titvideo h1{
         font-size: 8px;
     }
@@ -805,6 +871,9 @@ footer p{
     }
     caption{
         font-size: 10px;
+    }
+    .FORMULARIO h2{
+        font-size: 8px;
     }
     input{
         font-style: 6px;
@@ -834,6 +903,15 @@ footer p{
     }
 }
 @media (max-width: 313px){
+    input{
+        font-style: 4px;
+    }
+    label{
+        font-size: 9px;
+    }
+    button{
+        font-size: 5px;
+    }
     footer{
         height: 20px;
         line-height: 20px;
