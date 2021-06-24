@@ -62,52 +62,77 @@ header label:hover{
     color: black;
     text-decoration: none;
 }
-@media (max-width:768px){
-    header label{
-        display: block;
-    }
-    .menu{
-        cursor: absolute;
-        background: #645656;
-        opacity: 1;
-        width: 200px;
-        margin-left: -70%;
-        transition: all 0.5s;
-    }
-    .menu ul{
-        flex-direction: column;
-    }
-    .menu li{
-        border-top: 1px solid white;
-    }
-    #btn-menu:checked ~ .menu{
-        margin: 0;
-    }
-}
 .banner{
     position: relative;
     width: 100%;
     height: calc(100vh - 40px);
     margin-top: 4%;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url('./img/fondo1.jpg');
+    animation: banner 15s infinite linear;
+}
+.banner-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb(104, 103, 103,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    text-align: center;
+}
+@keyframes banner{
+    0%{
+        background-image: url('./img/fondo1.jpg');
+    }
+    33%{
+        background-image: url('./img/fondo1.jpg');
+    }
+    34%{
+        background-image: url('./img/fondo2.jpg');
+    }
+    66%{
+        background-image: url('./img/fondo2.jpg');
+
+    }
+    67%{
+        background-image: url('./img/fondo3.jpg');
+    }
+    100%{
+        background-image: url('./img/fondo3.jpg');
+    }
 }
 .RESUMEN{
     margin-top: 1%;
-    width: auto;
+    width: 100%;
     padding: 5%;
 }
 .RESUMEN div{
-    width: auto;
+    width: 100%;
     margin: 3%;
-    padding: 2%;
+    padding: 1%;
     margin-bottom: 0%;
     position: relative;
     padding-bottom: 35%;
+
 }
 .RESUMEN #imagen{
     margin: 1%;
     float: right;
+    padding-left: 3px;
     padding-bottom: 4%;
-    width: 30%;
+    width: 40%;
     height: 50%;
 }
 .RESUMEN #text{
@@ -133,7 +158,14 @@ header label:hover{
 .INICIO{
     margin-top: 1%;
     width: auto;
-    padding: 5%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.INICIO p{
+    padding-left: 5%;
+    padding-top: 2%;
+    font-size: 22px;
 }
 #content{
     width: 100%;
@@ -155,15 +187,18 @@ header label:hover{
     position: relative;
     padding-bottom: 18%;
     background-color: white;
+    padding-right: 0px;
 }
 details{
-    width: 95%;
+    width: 60%;
     height: auto;
+    background: rgba(0, 128, 0, 0);
 }
 #content #imagen{
-    margin: 1%;
+    margin: 10px;
     float: right;
-    padding-bottom: 4%;
+    padding-bottom: 40px;
+    background: rgba(0, 0, 0, 0);
 }
 #content #textdd{
     top: 32%;
@@ -173,13 +208,13 @@ details{
     padding-top: calc(5%-100px);
     position: absolute;
     text-align: justify;
+    background: rgba(255, 255, 255, 0);
 }
 img{
     height: 80%;
     width: 95%;
     max-width: 280px;
     max-height: 220px;
-    left: 95%;
     float: right;
     margin-left: 15px;
     border-radius: 5px;
@@ -198,13 +233,62 @@ summary{
 }
 
 dd{
+    width: 93.5%;
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: blue;
+    margin-left: -1.5%;
 }
 
 details[open] summary{
     background-color: #807e7e;
+}
+@media (max-width: 1260px){
+    .INICIO p{
+        font-size: 21px;
+    }
+    #content #imagen{
+        margin-top: -25px;
+    }
+    summary{
+        font-size: 25px;
+    }
+    dd{
+        font-size: 20px;
+        margin-left: -1.5%;
+        margin-right: -10%;
+    }
+}
+@media (max-width: 1201px){
+    .INICIO p{
+        font-size: 20px;
+    }
+
+    summary{
+        font-size: 20px;
+    }
+    dd{
+        font-size: 18px;
+        margin-left: -1.5%;
+        margin-right: -10%;
+    }
+}
+
+@media (max-width: 1008px){
+    .INICIO p{
+        font-size: 18px;
+    }
+    #content #imagen{
+        width: 35%;
+    }
+    summary{
+        font-size: 15px;
+    }
+    dd{
+        font-size: 12px;
+        margin-left: -1.5%;
+        margin-right: -10%;
+    }
 }
 .titvideo{
     margin-top: 1%;
@@ -241,12 +325,6 @@ details[open] summary{
     padding-right: 5%;
     padding-bottom: 1%;
 }
-
-table h1{
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
-}
-
 table{
     margin-top: 30px;
     caption-side: bottom;
@@ -256,18 +334,19 @@ table{
     background-image: linear-gradient(to left, rgb(64, 148, 106),white);
     box-shadow: 5px 5px 5px gray;
 }
-
+table h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
 th{
     background-color: black;
     color: white;
 }
-
 caption{
     padding-top: 20px;
     font-style: italic;
     font-size: 30px;
 }
-
 td,th{
     border: 2px solid black;
     padding-left: 20px;
@@ -275,9 +354,11 @@ td,th{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.FORMULARIO{
+    width: 100%;
+}
 form{
     margin-top: 0%;
-    width: 100%;
     padding: 5%;
 }
 form ul li{
@@ -308,7 +389,10 @@ select{
     padding: 0.5%;
     margin-left: 2%;
 }
-
+#SO{
+    margin-top: 1.5%;
+    margin-bottom: 0.5%;
+}
 button{
     font-family: 'roboto';
     background: #4568DC;
@@ -322,11 +406,410 @@ button{
     cursor: pointer;
 	margin-left: 1.5%;
 }
-#SO{
-    margin-top: 1.5%;
-    margin-bottom: 0.5%;
-}
 #botones{
     padding-top: 1.5%;
     padding-bottom: 1%;
+}
+footer{
+    border-top: 2px solid black;
+    background: #CEEDF7;
+    opacity: 0.9;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+footer p{
+    color: #4611F3;
+    margin-left: 8px;
+    margin-right: 5px;
+    font-weight: bolder;
+}
+#foot a{
+    text-decoration: none;
+    color: #4611F3;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+@media (max-width: 1175px){
+    .RESUMEN h1{
+        font-size: 25px;
+    }
+    .RESUMEN #imagen{
+        width: 35%;
+        height: 45%;
+    }
+    .RESUMEN #text{
+        width: 58%;
+        font-size: 20px;
+    }
+    .RESUMEN #text2{
+        font-size: 20px;
+    }
+    .titvideo h1{
+        font-size: 25px;
+    }
+    .titvideo #text{
+        font-size: 20px;
+    }
+    .TABLA h1{
+        font-size: 25px;
+    }
+    td,th{
+        font-size: 15px;
+    }
+    caption{
+        font-size: 25px;
+    }
+    input{
+        font-style: 14px;
+    }
+    label{
+        font-size: 18px;
+    }
+    button{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1000px){
+    .RESUMEN h1{
+        font-size: 23px;
+    }
+    .RESUMEN #imagen{
+        width: 30%;
+        height: 40%;
+    }
+    .RESUMEN #text{
+        width: 60%;
+        font-size: 17px;
+    }
+    .RESUMEN #text2{
+        font-size: 17px;
+    }
+    .titvideo h1{
+        font-size: 23px;
+    }
+    .titvideo #text{
+        font-size: 17px;
+    }
+    .TABLA h1{
+        font-size: 23px;
+    }
+    td,th{
+        font-size: 13px;
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    caption{
+        font-size: 22px;
+    }
+    input{
+        font-style: 12px;
+    }
+    label{
+        font-size: 16px;
+    }
+    button{
+        font-size: 18px;
+    }
+}
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        cursor: absolute;
+        background: #645656;
+        opacity: 1;
+        width: 200px;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid white;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+    .banner{
+        height: 60vh;
+    }
+    .banner-content h1{
+        padding-top: 8.5rem;
+        font-size: 3.25rem;
+    }
+    footer p{
+        height: 20px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+    #foot a{
+        height: 20px;
+        font-size: 90%;
+        flex-direction: column;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    footer{
+        height: 30px;
+        line-height: 30px;
+    }
+    .RESUMEN h1{
+        font-size: 18px;
+    }
+    .RESUMEN #imagen{
+        margin-top: 10px;
+        width: 25%;
+        height: 35%;
+        margin-bottom: 100px;
+    }
+    .RESUMEN #text{
+        font-size: 13px;
+        width: 68%;
+    }
+    .RESUMEN #text2{
+        font-size: 13px;
+    }
+    .titvideo h1{
+        font-size: 18px;
+    }
+    .titvideo #text{
+        font-size: 13px;
+    }
+    .TABLA h1{
+        font-size: 18px;
+    }
+    td,th{
+        font-size: 11px;
+    }
+    caption{
+        font-size: 20px;
+    }
+    input{
+        font-style: 11px;
+    }
+    label{
+        font-size: 14px;
+    }
+    button{
+        font-size: 15px;
+    }
+}
+@media (max-width: 650px){
+    td,th{
+        font-size: 10px;
+    }
+    caption{
+        font-size: 18px;
+    }
+    input{
+        font-style: 10px;
+    }
+    label{
+        font-size: 13px;
+    }
+    button{
+        font-size: 13px;
+    }
+}
+@media (max-width: 587px){
+    .RESUMEN h1{
+        font-size: 13px;
+    }
+    .RESUMEN #imagen{
+        width: 22%;
+        height: 22%;
+        margin-bottom: 100px;
+        margin-top: 12px;
+    }
+    .RESUMEN #text{
+        font-size: 10px;
+        width: 70%;
+    }
+    .RESUMEN #text2{
+        font-size: 10px;
+    }
+    .titvideo h1{
+        font-size: 13px;
+    }
+    .titvideo #text{
+        font-size: 10px;
+    }
+    .TABLA h1{
+        font-size: 13px;
+    }
+    td,th{
+        font-size: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    caption{
+        font-size: 15px;
+    }
+    .FORMULARIO{
+        width: 100%;
+    }
+    input{
+        font-style: 9px;
+    }
+    label{
+        font-size: 11px;
+    }
+    button{
+        font-size: 12px;
+    }
+}
+@media (max-width:470px){
+    .RESUMEN h1{
+        font-size: 8px;
+    }
+    .RESUMEN #imagen{
+        width: 20%;
+        height: 20%;
+        margin-bottom: 100px;
+        margin-top: 12px;
+    }
+    .RESUMEN #text{
+        font-size: 8px;
+        width: 72%;
+    }
+    .RESUMEN #text2{
+        font-size: 6px;
+    }
+    .titvideo h1{
+        font-size: 8px;
+    }
+    .titvideo #text{
+        font-size: 6px;
+    }
+    .TABLA h1{
+        font-size: 8px;
+    }
+    td,th{
+        font-size: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    caption{
+        font-size: 12px;
+    }
+    input{
+        font-style: 7px;
+    }
+    label{
+        font-size: 12px;
+    }
+    button{
+        font-size: 9px;
+    }
+    footer{
+        height: 34px;
+        line-height: 30px;
+    }
+    footer p{
+        height: 20px;
+        font-size: 13px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    #foot a{
+        height: 20px;
+        font-size: 70%;
+        flex-direction: column;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+}
+@media(max-width:364px){
+    .RESUMEN h1{
+        font-size: 8px;
+    }
+    .RESUMEN #imagen{
+        width: 18%;
+        height: 18%;
+        margin-bottom: 100px;
+        margin-top: 10px;
+    }
+    .RESUMEN #text{
+        font-size: 6px;
+        width: 74%;
+    }
+    .RESUMEN #text2{
+        font-size: 6px;
+    }
+    .titvideo h1{
+        font-size: 8px;
+    }
+    .titvideo #text{
+        font-size: 6px;
+    }
+    .TABLA h1{
+        font-size: 8px;
+    }
+    td,th{
+        font-size: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    caption{
+        font-size: 10px;
+    }
+    input{
+        font-style: 6px;
+    }
+    label{
+        font-size: 11px;
+    }
+    button{
+        font-size: 7px;
+    }
+    footer{
+        height: 25px;
+        line-height: 25px;
+    }
+    footer p{
+        height: 20px;
+        font-size: 12px;
+        margin-left: 0.6;
+        margin-right: 0.6;
+    }
+    #foot a{
+        height: 15px;
+        font-size: 55%;
+        flex-direction: column;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+}
+@media (max-width: 313px){
+    footer{
+        height: 20px;
+        line-height: 20px;
+    }
+    footer p{
+        height: 20px;
+        font-size: 10px;
+        margin-left: 0.6;
+        margin-right: 0.6;
+    }
+    #foot a{
+        height: 15px;
+        font-size: 50%;
+        flex-direction: column;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
 }
