@@ -60,7 +60,7 @@ header label:hover{
 }
 .menu li a{
     display: block;
-    padding: 20px 15px;
+    padding: 15px 15px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -470,20 +470,22 @@ footer p{
         font-size: 20px;
     }
 }
-@media (max-width: 1008px){
-
+@media (max-width: 1120px){
     #content #imagen{
-        width: 35%;
+        width: 30%;
+        margin-top: 10px;
     }
     summary{
-        font-size: 15px;
+        font-size: 20px;
     }
     dd{
-        font-size: 12px;
+        font-size: 16px;
         margin-left: -1.5%;
         margin-right: -10%;
     }
 }
+
+
 @media (max-width: 1000px){
     header label{
         display: block;
