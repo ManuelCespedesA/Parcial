@@ -480,12 +480,11 @@ footer p{
     }
     dd{
         font-size: 16px;
-        margin-left: -1.5%;
+/*        margin-left: -1.5%;
         margin-right: -10%;
+        */
     }
 }
-
-
 @media (max-width: 1000px){
     header label{
         display: block;
@@ -506,7 +505,7 @@ footer p{
         border-top: 1px solid white;
     }
     .menu li a{
-        padding: 40px 40px;
+        padding: 20px 20px;
     }
     .menu nav{
         padding-top: 200px;
@@ -525,16 +524,16 @@ footer p{
     }
     .RESUMEN #text{
         width: 60%;
-        font-size: 20px;
+        font-size: 18px;
     }
     .RESUMEN #text2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .INICIO h1{
         font-size: 23px;
     }
     .INICIO p{
-        font-size: 10px;
+        font-size: 11px;
     }
     #content h2{
         font-size: 20px;
@@ -544,12 +543,10 @@ footer p{
         margin-top: 10px;
     }
     summary{
-        font-size: 20px;
+        font-size: 18px;
     }
     dd{
-        font-size: 15px;
-        margin-left: -1.5%;
-        margin-right: -10%;
+        font-size: 13px;
     }
     .titvideo h1{
         font-size: 23px;
@@ -611,8 +608,7 @@ footer p{
         height: 60vh;
     }
     .banner-content h1{
-        padding-top: 8.5rem;
-        font-size: 3.25rem;
+        font-size: 25px;
     }
     .RESUMEN h1{
         font-size: 18px;
@@ -633,11 +629,18 @@ footer p{
     .INICIO h1{
         font-size: 18px;
     }
-    .INICIO p{
-        font-size: 10px;
-    }
     #content h2{
         font-size: 15px;
+    }
+    summary{
+        font-size: 15px;
+    }
+    #content #imagen{
+        width: 25%;
+        margin-top: 10px;
+    }
+    dd{
+        font-size: 10px;
     }
     .titvideo h1{
         font-size: 18px;
@@ -688,9 +691,6 @@ footer p{
     .INICIO h1{
         font-size: 15px;
     }
-    .INICIO p{
-        font-size: 13px;
-    }
     #content h2{
         font-size: 14px;
     }
@@ -714,6 +714,7 @@ footer p{
     }
 }
 @media (max-width: 587px){
+    
     .RESUMEN h1{
         font-size: 13px;
     }
@@ -733,11 +734,14 @@ footer p{
     .INICIO h1{
         font-size: 13px;
     }
-    .INICIO p{
-        font-size: 10px;
-    }
     #content h2{
         font-size: 12px;
+    }
+    summary{
+        font-size: 12px;
+    }
+    dd{
+        font-size: 7px;
     }
     .titvideo h1{
         font-size: 13px;
@@ -791,14 +795,15 @@ footer p{
     .INICIO h1{
         font-size: 10px;
     }
-    .INICIO p{
-        font-size: 8px;
-    }
     #content h2{
         font-size: 10px;
     }
     .titvideo h1{
         font-size: 10px;
+    }
+    #content #imagen{
+        width: 23%;
+        margin-top: 9px;
     }
     .titvideo #text{
         font-size: 8px;
@@ -865,9 +870,6 @@ footer p{
     }
     .INICIO h1{
         font-size: 8px;
-    }
-    .INICIO p{
-        font-size: 6px;
     }
     #content h2{
         font-size: 8px;
