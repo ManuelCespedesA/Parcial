@@ -737,6 +737,11 @@ footer p{
     #content h2{
         font-size: 12px;
     }
+    #content #imagen{
+        padding-left: 20px;
+        width: 90px;
+        margin-top: 0;
+    }
     summary{
         font-size: 12px;
     }
@@ -802,7 +807,7 @@ footer p{
         font-size: 10px;
     }
     #content #imagen{
-        width: 23%;
+        width: 27%;
         margin-top: 9px;
     }
     .titvideo #text{
@@ -851,6 +856,13 @@ footer p{
         margin-left: 3px;
     }
 }
+@media (max-width: 428px){
+    #content #imagen{
+        padding-right: 20px;
+        width: 85px;
+        margin-top: 0;
+    }
+}
 @media(max-width:364px){
     .RESUMEN h1{
         font-size: 8px;
@@ -873,6 +885,11 @@ footer p{
     }
     #content h2{
         font-size: 8px;
+    }
+    #content #imagen{
+        padding-left: 20px;
+        width: 90px;
+        margin-top: 0;
     }
     .titvideo h1{
         font-size: 8px;
